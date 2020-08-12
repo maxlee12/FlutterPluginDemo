@@ -75,6 +75,6 @@ Dart flutter_plugin 中使用channel method和 channel event调用原生方法�
 
 4、iOS端示例代码地址：
 地址包含完整的plugin文件 和 科大讯飞的示例唤醒iOS Android demo
-
+https://github.com/maxlee12/FlutterPluginDemo
 四、对Android 平台编码测试
 未完待续
