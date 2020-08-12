@@ -24,13 +24,13 @@
 填入需要创建的项目的 project name Project location Description等信息，点击next
 填入需要创建的项目的 Company domain Platform channel language 等信息，点击Finish
 等待plugin创建完成。创建好的plugin 初始文件夹如下图所示
-![截图截图](https://github.com/maxlee12/FlutterPluginDemo/master/Screenshots/iOS/photo2.png)
+![截图截图](https://raw.githubusercontent.com/maxlee12/FlutterPluginDemo/master/Screenshots/iOS/photo-1.png)
 
 2、使用命令行创建Flutter plugin。[官方指导文档地址](https://flutter.dev/docs/development/packages-and-plugins/developing-packages)
 打开命令行，进入需要创建的文件夹地址
 输入命令：flutter create --template=plugin --platforms=android,ios -i objc flutter_plugin
 等待创建完成。创建好的目录如下图所示
-![截图截图](https://github.com/chenyufeng1991/NewsClient/raw/master/Screenshots/2.png)
+![截图截图](https://raw.githubusercontent.com/maxlee12/FlutterPluginDemo/master/Screenshots/iOS/photo-2.png)
 
 三、对iOS 平台编码测试
 1、添加插件需要的资源图片文件以及framework
@@ -45,9 +45,9 @@ preserve_paths中写入自定义Lib文件路径
 vendored_frameworks中写入自定文件路径
 resources中写入资源文件路径
 科大讯飞需要的framework如下图所示：
-![截图截图](https://github.com/chenyufeng1991/NewsClient/raw/master/Screenshots/2.png)
+![截图截图](https://raw.githubusercontent.com/maxlee12/FlutterPluginDemo/master/Screenshots/iOS/photo-3.png)
 修改好的文件如下图所示：
-![截图截图](https://github.com/chenyufeng1991/NewsClient/raw/master/Screenshots/2.png)
+![截图截图](https://raw.githubusercontent.com/maxlee12/FlutterPluginDemo/master/Screenshots/iOS/photo-4.png)
 3、开始写iOS 代码
 podspec文件配置好，iOS端插件的依赖就准备好了，下面可以开始写业务代码了
 打开iOS目录下的example文件夹，使用 命令行执行pod install，完成后，打开.xcworkspace文件
@@ -58,19 +58,19 @@ podspec文件配置好，iOS端插件的依赖就准备好了，下面可以开�
 在example中，调用写好的插件，debug调试、验证程序
 iOS端plugin完成
 Classes文件下加入的业务代码截图：
-![截图截图](https://github.com/chenyufeng1991/NewsClient/raw/master/Screenshots/2.png)
+![截图截图](https://raw.githubusercontent.com/maxlee12/FlutterPluginDemo/master/Screenshots/iOS/photo-5.png)
 
 iOS FlutterPlugin 中调用业务代码截图：(注意channel method和channel event的使用方法)
 本示例中plugin 使用channel method 来调用原生方法，使用channel event回调原生的处理结果
-![截图截图](https://github.com/chenyufeng1991/NewsClient/raw/master/Screenshots/2.png)
+![截图截图](https://raw.githubusercontent.com/maxlee12/FlutterPluginDemo/master/Screenshots/iOS/photo-6.png)
 
 Dart flutter_plugin 中使用channel method和 channel event调用原生方法，同时提供接口给flutter工程使用
 截图如下：
-![截图截图](https://github.com/chenyufeng1991/NewsClient/raw/master/Screenshots/2.png)
+![截图截图](https://raw.githubusercontent.com/maxlee12/FlutterPluginDemo/master/Screenshots/iOS/photo-7.png)
 
 在example中，调用写好的插件。打开example中lib下的main.dart，开始调用插件。
 截图如下：
-![截图截图](https://github.com/chenyufeng1991/NewsClient/raw/master/Screenshots/2.png)
+![截图截图](https://raw.githubusercontent.com/maxlee12/FlutterPluginDemo/master/Screenshots/iOS/photo-8.png)
 
 
 4、iOS端示例代码地址：
