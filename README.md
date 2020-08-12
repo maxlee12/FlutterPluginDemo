@@ -1,6 +1,6 @@
 # FlutterPluginDemo
 如何在 Flutter pugin 中使用Framework
-最近做的一个flutter项目中，需要使用到科大讯飞的AIUI 语音唤醒和语音识别等功能。由于dart-pub上目前没有现成的package供我们使用，因此需要我们自己动手创建一个flutter plugin。
+最近做的一个flutter项目中，需要使用到科大讯飞的AIUI 语音唤醒和语音识别等功能。由于 [dart-pub](https://dart-pub.mirrors.sjtug.sjtu.edu.cn)上目前没有现成的package供我们使用，因此需要我们自己动手创建一个flutter plugin。
 下面将介绍一下Flutter plugin的创建使用步骤。
 
 整个过程分为以下几个步骤：
@@ -12,7 +12,7 @@
 测试好的插件进行打包
 
 一、准备需要集成的原生程序
-这个步骤不需要多说，插件的功能不同，需要的程序来源不同。对于我这个示例项目，是在科大讯飞的平台上，创建好项目，选择需要接入的服务，然后下载好官方给的对应的example。
+这个步骤不需要多说，插件的功能不同，需要的程序来源不同。对于我这个示例项目，是在[科大讯飞的平台](https://console.xfyun.cn/app/myapp)上，创建好项目，选择需要接入的服务，然后下载好官方给的对应的example。
 下载好example后，需要在原生平台上测试通过
 
 二、创建flutter plugin
@@ -24,9 +24,9 @@
 填入需要创建的项目的 project name Project location Description等信息，点击next
 填入需要创建的项目的 Company domain Platform channel language 等信息，点击Finish
 等待plugin创建完成。创建好的plugin 初始文件夹如下图所示
-![截图截图](https://github.com/chenyufeng1991/NewsClient/raw/master/Screenshots/2.png)
+![截图截图](https://github.com/maxlee12/FlutterPluginDemo/master/Screenshots/iOS/photo2.png)
 
-2、使用命令行创建Flutter plugin。官方指导文档地址
+2、使用命令行创建Flutter plugin。[官方指导文档地址](https://flutter.dev/docs/development/packages-and-plugins/developing-packages)
 打开命令行，进入需要创建的文件夹地址
 输入命令：flutter create --template=plugin --platforms=android,ios -i objc flutter_plugin
 等待创建完成。创建好的目录如下图所示
@@ -38,7 +38,7 @@
 将项目需要的framework文件放入Libs文件夹下
 将项目需要的资源文件放入Resources 文件夹下
 2、修改iOS 文件夹下的.podspec文件，原生需要的framework和资源文件加入pod管理中
-打开.podspec文件，按照podspec的格式要求修改文件
+打开.podspec文件，按照[podspec的格式要求](https://guides.cocoapods.org/syntax/podspec.html)修改文件
 frameworks中加入需要的系统framework
 libraries中加入需要的tbd文件
 preserve_paths中写入自定义Lib文件路径
